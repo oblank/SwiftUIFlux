@@ -37,9 +37,9 @@ final public class Store<StoreState: FluxState>: ObservableObject {
     }
 
     public func dispatch(action: Action) {
-        DispatchQueue.main.async {
+       // DispatchQueue.main.async {
             self.dispatchFunction(action)
-        }
+        // }
     }
     
     private func _dispatch(action: Action) {
